@@ -32,6 +32,10 @@ class ValidationError(PydanticSQLException):
     """Raised when there's a validation error with Pydantic models."""
     pass
 
+class DynamicParameterError(PydanticSQLException):
+    """Raised when there's a validation error with Pydantic models."""
+    pass
+
 # You can add more specific exceptions as needed
 
 def handle_db_error(error: Exception) -> PydanticSQLException:
