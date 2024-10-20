@@ -26,7 +26,7 @@ def showcase_pydanticsql():
 
     # Example 1: Simple query with model mapping
     print("\n1. Fetching a user by ID:")
-    query = Query("SELECT * FROM users WHERE id = {user_id}")
+    query = Query("SELECT * FROM users WHERE name = {user_id}")
     user = query.run({"user_id": 1}, model=User, db_connection=conn)
     print(f"User: {user}")
 
